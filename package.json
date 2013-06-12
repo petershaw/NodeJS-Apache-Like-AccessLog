@@ -1,5 +1,5 @@
 {
-  "name": "accesslog",
+  "name": "apache-like-accesslog",
   "description": "A apache-like access log for nodejs.",
   "version": "0.0.1",
   "private": false,

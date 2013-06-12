@@ -1,4 +1,4 @@
-accesslog
+apache-like-accesslog
 ==========
 ---
 
