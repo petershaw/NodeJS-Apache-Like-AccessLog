@@ -16,6 +16,9 @@ var conf = {
 
 accesslog.version = '0.0.1';
 
+/**
+ * Configuration object
+ */
 accesslog.configure = function accesslogConfigure(opt) {
   // writes logs into this directory
   directory = (typeof opt.directory === 'string') ? opt.directory : __dirname + pathsep + 'logs';
@@ -40,6 +43,12 @@ accesslog.configure = function accesslogConfigure(opt) {
   conf.format = (typeof opt.directory === 'string') ? opt.format : 'CLF';
 };
 
+/**
+ * Log-Middleware 
+ * Will log in the format that is set in conf.format. Default formatg is CLF.
+ * 
+ * @scope public
+ */
 accesslog.logger = function log(request, response, next) {
 	var starttime =  microtime.now();
 	// from behind a proxy
@@ -58,7 +67,6 @@ accesslog.logger = function log(request, response, next) {
 		}	
 	}
 
-	
   if (typeof next === 'function') {
     next();
   }
@@ -100,9 +108,13 @@ accesslog.logger = function log(request, response, next) {
 	}
 };
 
-
+/** 
+ * Function to write to the logfile, configured in conf.directory and conf.filename.
+ * Will open a filehandle if not opend allready.
+ *
+ * @scope private
+ */
 writeToLog = function( str ){
-console.log(conf);
 	if(fd == undefined){
 		fd = fs.openSync(path.join(conf.directory, conf.filename), 'a');
 	}
