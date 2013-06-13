@@ -14,7 +14,7 @@ var conf = {
 	filename: 'access.log'
 };
 
-accesslog.version = '0.0.1';
+accesslog.version = '0.0.2';
 
 /**
  * Configuration object
