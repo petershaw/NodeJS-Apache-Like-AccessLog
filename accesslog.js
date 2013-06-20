@@ -4,6 +4,7 @@ var microtime 		= require('microtime')
 	, fs 			= require('fs')
 	, path 			= require('path')
 	, fd			= undefined
+	, cluster 		= require('cluster');
 	;
 
 // public exports
@@ -14,7 +15,7 @@ var conf = {
 	filename: 'access.log'
 };
 
-accesslog.version = '0.0.2';
+accesslog.version = '0.0.3';
 
 /**
  * Configuration object
@@ -39,7 +40,9 @@ accesslog.configure = function accesslogConfigure(opt) {
 
 	NCSA extended/combined log format with Virtual Host
     "%v %h %l %u %t \"%r\" %>s %b \"%{Referer}i\" \"%{User-agent}i\""
-    **/
+    
+    Add a '+' to the logformat to also add the clusters worker id to the entry
+    */
   conf.format = (typeof opt.directory === 'string') ? opt.format : 'CLF';
 };
 
@@ -59,10 +62,10 @@ accesslog.logger = function log(request, response, next) {
 	}
 	// get username (if available)
 	var username = "-";
-	if(request.session.user){
-		username = "-";
+	if(request.session && request.session.user){
+		username = request.session.user;
 	} else {
-		if(request.session.id){
+		if(request.session && request.session.id){
 			username = request.session.id;
 		}	
 	}
@@ -98,13 +101,18 @@ accesslog.logger = function log(request, response, next) {
   	  	200,
   		response._headers['content-length']
   	);
-  	if(conf.format == 'CLF'){
-		writeToLog(p0 +" "+ p1 +" "+ p2);
-	} else if(conf.format == 'EXTENDED'){
-		writeToLog(p0 +" "+ p1 +" "+ '"'+response.req.headers['user-agent']+'"' +" "+ p2);
+  	var p3 = '';
+  	if(conf.format.match('\\+')){
+  		var clusterid = cluster.worker && cluster.worker.id || 'not-a-cluster';
+  		p3 = ' (worker: '+ clusterid + ')';
+  	}
+  	if(conf.format.match('CLF') > 0){
+  		writeToLog(p0 +" "+ p1 +" "+ p2 + p3);
+	} else if(conf.format.match('EXTENDED')){
+		writeToLog(p0 +" "+ p1 +" "+ '"'+response.req.headers['user-agent']+'"' +" "+ p2 + p3);
 	} else {
 		// default fallback
-		writeToLog(p0 +" "+ p1 +" "+ p2);
+		writeToLog(p0 +" "+ p1 +" "+ p2 + p3);
 	}
 };
 

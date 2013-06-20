@@ -14,7 +14,7 @@ Usage
 ```javascript
 var accesslog = require('accesslog');
 […express...]
-app.use(apachelog.logger);
+app.use(accesslog.logger);
 ```
 
 Configuration
