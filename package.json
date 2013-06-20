@@ -1,7 +1,7 @@
 {
   "name": "apache-like-accesslog",
   "description": "A apache-like access log as middleware for nodejs.",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "private": false,
   "homepage": "https://github.com/petershaw/NodeJS-Apache-Like-AccessLog",
   "repository": {
