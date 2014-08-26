@@ -1,6 +1,6 @@
 {
   "name": "apache-like-accesslog",
-  "description": "A apache-like access log as middleware for nodejs.",
+  "description": "A apache-like access log as middleware for express and restify.",
   "version": "0.0.4",
   "private": false,
   "homepage": "https://github.com/petershaw/NodeJS-Apache-Like-AccessLog",
@@ -15,7 +15,9 @@
     "access",
     "apache",
     "NCSA Common Log Format",
-    "CLF"
+    "CLF",
+    "express",
+    "restify"
   ],
   "dependencies": {
     "microtime": "~0.4.0",

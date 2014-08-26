@@ -1,140 +1,104 @@
 0 info it worked if it ends with ok
-1 verbose cli [ '/usr/local/Cellar/node/0.10.7/bin/node',
-1 verbose cli   '/usr/local/bin/npm',
-1 verbose cli   'publish' ]
-2 info using npm@1.2.21
-3 info using node@v0.10.7
-4 verbose publish [ '.' ]
-5 verbose read json /Users/pshaw/Projects/NodeJS-Apache-Like-AccessLog/package.json
+1 verbose cli [ 'node', '/usr/local/bin/npm', 'publish' ]
+2 info using npm@2.0.0-alpha-5
+3 info using node@v0.10.30
+4 verbose node symlink /usr/local/bin/node
+5 verbose publish [ '.' ]
 6 verbose cache add [ '.', null ]
-7 verbose cache add name=undefined spec="." args=[".",null]
-8 verbose parsed url { protocol: null,
-8 verbose parsed url   slashes: null,
-8 verbose parsed url   auth: null,
-8 verbose parsed url   host: null,
-8 verbose parsed url   port: null,
-8 verbose parsed url   hostname: null,
-8 verbose parsed url   hash: null,
-8 verbose parsed url   search: null,
-8 verbose parsed url   query: null,
-8 verbose parsed url   pathname: '.',
-8 verbose parsed url   path: '.',
-8 verbose parsed url   href: '.' }
+7 verbose cache add spec="." args=[".",null]
+8 verbose cache add local package /Users/kris/Projects/NodeJS-Apache-Like-AccessLog
 9 silly lockFile 3a52ce78- .
-10 verbose lock . /Users/pshaw/.npm/3a52ce78-.lock
-11 verbose read json package.json
-12 verbose tar pack [ '/var/folders/8n/rc7_yfys61s0vqvq00njqtxc0000gn/T/npm-37452/1371689026179-0.2771582119166851/tmp.tgz',
-12 verbose tar pack   '.' ]
-13 verbose tarball /var/folders/8n/rc7_yfys61s0vqvq00njqtxc0000gn/T/npm-37452/1371689026179-0.2771582119166851/tmp.tgz
-14 verbose folder .
-15 info prepublish apache-like-accesslog@0.0.2
-16 silly lockFile 3a52ce78- .
-17 verbose lock . /Users/pshaw/.npm/3a52ce78-.lock
-18 silly lockFile 1baf7b1c-26179-0-2771582119166851-tmp-tgz /var/folders/8n/rc7_yfys61s0vqvq00njqtxc0000gn/T/npm-37452/1371689026179-0.2771582119166851/tmp.tgz
-19 verbose lock /var/folders/8n/rc7_yfys61s0vqvq00njqtxc0000gn/T/npm-37452/1371689026179-0.2771582119166851/tmp.tgz /Users/pshaw/.npm/1baf7b1c-26179-0-2771582119166851-tmp-tgz.lock
-20 silly lockFile 3a52ce78- .
-21 silly lockFile 3a52ce78- .
-22 silly lockFile 1baf7b1c-26179-0-2771582119166851-tmp-tgz /var/folders/8n/rc7_yfys61s0vqvq00njqtxc0000gn/T/npm-37452/1371689026179-0.2771582119166851/tmp.tgz
-23 silly lockFile 1baf7b1c-26179-0-2771582119166851-tmp-tgz /var/folders/8n/rc7_yfys61s0vqvq00njqtxc0000gn/T/npm-37452/1371689026179-0.2771582119166851/tmp.tgz
-24 verbose tar unpack /var/folders/8n/rc7_yfys61s0vqvq00njqtxc0000gn/T/npm-37452/1371689026179-0.2771582119166851/tmp.tgz
-25 silly lockFile c4a79642-26179-0-2771582119166851-package /var/folders/8n/rc7_yfys61s0vqvq00njqtxc0000gn/T/npm-37452/1371689026179-0.2771582119166851/package
-26 verbose lock /var/folders/8n/rc7_yfys61s0vqvq00njqtxc0000gn/T/npm-37452/1371689026179-0.2771582119166851/package /Users/pshaw/.npm/c4a79642-26179-0-2771582119166851-package.lock
-27 silly lockFile 1baf7b1c-26179-0-2771582119166851-tmp-tgz /var/folders/8n/rc7_yfys61s0vqvq00njqtxc0000gn/T/npm-37452/1371689026179-0.2771582119166851/tmp.tgz
-28 verbose lock /var/folders/8n/rc7_yfys61s0vqvq00njqtxc0000gn/T/npm-37452/1371689026179-0.2771582119166851/tmp.tgz /Users/pshaw/.npm/1baf7b1c-26179-0-2771582119166851-tmp-tgz.lock
-29 silly gunzTarPerm modes [ '755', '644' ]
-30 silly gunzTarPerm extractEntry package.json
-31 silly gunzTarPerm extractEntry README.md
-32 silly gunzTarPerm extractEntry accesslog.js
-33 silly gunzTarPerm extractEntry index.js
-34 verbose read json /var/folders/8n/rc7_yfys61s0vqvq00njqtxc0000gn/T/npm-37452/1371689026179-0.2771582119166851/package/package.json
-35 silly lockFile c4a79642-26179-0-2771582119166851-package /var/folders/8n/rc7_yfys61s0vqvq00njqtxc0000gn/T/npm-37452/1371689026179-0.2771582119166851/package
-36 silly lockFile c4a79642-26179-0-2771582119166851-package /var/folders/8n/rc7_yfys61s0vqvq00njqtxc0000gn/T/npm-37452/1371689026179-0.2771582119166851/package
-37 silly lockFile 1baf7b1c-26179-0-2771582119166851-tmp-tgz /var/folders/8n/rc7_yfys61s0vqvq00njqtxc0000gn/T/npm-37452/1371689026179-0.2771582119166851/tmp.tgz
-38 silly lockFile 1baf7b1c-26179-0-2771582119166851-tmp-tgz /var/folders/8n/rc7_yfys61s0vqvq00njqtxc0000gn/T/npm-37452/1371689026179-0.2771582119166851/tmp.tgz
-39 verbose from cache /var/folders/8n/rc7_yfys61s0vqvq00njqtxc0000gn/T/npm-37452/1371689026179-0.2771582119166851/package/package.json
-40 verbose tar pack [ '/Users/pshaw/.npm/apache-like-accesslog/0.0.2/package.tgz',
-40 verbose tar pack   '/var/folders/8n/rc7_yfys61s0vqvq00njqtxc0000gn/T/npm-37452/1371689026179-0.2771582119166851/package' ]
-41 verbose tarball /Users/pshaw/.npm/apache-like-accesslog/0.0.2/package.tgz
-42 verbose folder /var/folders/8n/rc7_yfys61s0vqvq00njqtxc0000gn/T/npm-37452/1371689026179-0.2771582119166851/package
-43 silly lockFile c4a79642-26179-0-2771582119166851-package /var/folders/8n/rc7_yfys61s0vqvq00njqtxc0000gn/T/npm-37452/1371689026179-0.2771582119166851/package
-44 verbose lock /var/folders/8n/rc7_yfys61s0vqvq00njqtxc0000gn/T/npm-37452/1371689026179-0.2771582119166851/package /Users/pshaw/.npm/c4a79642-26179-0-2771582119166851-package.lock
-45 silly lockFile a70ba465-like-accesslog-0-0-2-package-tgz /Users/pshaw/.npm/apache-like-accesslog/0.0.2/package.tgz
-46 verbose lock /Users/pshaw/.npm/apache-like-accesslog/0.0.2/package.tgz /Users/pshaw/.npm/a70ba465-like-accesslog-0-0-2-package-tgz.lock
-47 silly lockFile c4a79642-26179-0-2771582119166851-package /var/folders/8n/rc7_yfys61s0vqvq00njqtxc0000gn/T/npm-37452/1371689026179-0.2771582119166851/package
-48 silly lockFile c4a79642-26179-0-2771582119166851-package /var/folders/8n/rc7_yfys61s0vqvq00njqtxc0000gn/T/npm-37452/1371689026179-0.2771582119166851/package
-49 silly lockFile a70ba465-like-accesslog-0-0-2-package-tgz /Users/pshaw/.npm/apache-like-accesslog/0.0.2/package.tgz
-50 silly lockFile a70ba465-like-accesslog-0-0-2-package-tgz /Users/pshaw/.npm/apache-like-accesslog/0.0.2/package.tgz
-51 silly lockFile a4412888-che-like-accesslog-0-0-2-package /Users/pshaw/.npm/apache-like-accesslog/0.0.2/package
-52 verbose lock /Users/pshaw/.npm/apache-like-accesslog/0.0.2/package /Users/pshaw/.npm/a4412888-che-like-accesslog-0-0-2-package.lock
-53 silly lockFile a4412888-che-like-accesslog-0-0-2-package /Users/pshaw/.npm/apache-like-accesslog/0.0.2/package
-54 silly lockFile a4412888-che-like-accesslog-0-0-2-package /Users/pshaw/.npm/apache-like-accesslog/0.0.2/package
-55 verbose tar unpack /Users/pshaw/.npm/apache-like-accesslog/0.0.2/package.tgz
-56 silly lockFile a4412888-che-like-accesslog-0-0-2-package /Users/pshaw/.npm/apache-like-accesslog/0.0.2/package
-57 verbose lock /Users/pshaw/.npm/apache-like-accesslog/0.0.2/package /Users/pshaw/.npm/a4412888-che-like-accesslog-0-0-2-package.lock
-58 silly lockFile a70ba465-like-accesslog-0-0-2-package-tgz /Users/pshaw/.npm/apache-like-accesslog/0.0.2/package.tgz
-59 verbose lock /Users/pshaw/.npm/apache-like-accesslog/0.0.2/package.tgz /Users/pshaw/.npm/a70ba465-like-accesslog-0-0-2-package-tgz.lock
-60 silly gunzTarPerm modes [ '755', '644' ]
-61 silly gunzTarPerm extractEntry package.json
-62 silly gunzTarPerm extractEntry README.md
-63 silly gunzTarPerm extractEntry accesslog.js
-64 silly gunzTarPerm extractEntry index.js
-65 verbose read json /Users/pshaw/.npm/apache-like-accesslog/0.0.2/package/package.json
-66 silly lockFile a4412888-che-like-accesslog-0-0-2-package /Users/pshaw/.npm/apache-like-accesslog/0.0.2/package
-67 silly lockFile a4412888-che-like-accesslog-0-0-2-package /Users/pshaw/.npm/apache-like-accesslog/0.0.2/package
-68 silly lockFile a70ba465-like-accesslog-0-0-2-package-tgz /Users/pshaw/.npm/apache-like-accesslog/0.0.2/package.tgz
-69 silly lockFile a70ba465-like-accesslog-0-0-2-package-tgz /Users/pshaw/.npm/apache-like-accesslog/0.0.2/package.tgz
-70 verbose from cache /Users/pshaw/.npm/apache-like-accesslog/0.0.2/package/package.json
-71 verbose chmod /Users/pshaw/.npm/apache-like-accesslog/0.0.2/package.tgz 644
-72 verbose chown /Users/pshaw/.npm/apache-like-accesslog/0.0.2/package.tgz [ 501, 20 ]
-73 silly lockFile 3a52ce78- .
-74 silly publish { name: 'apache-like-accesslog',
-74 silly publish   description: 'A apache-like access log as middleware for nodejs.',
-74 silly publish   version: '0.0.2',
-74 silly publish   private: false,
-74 silly publish   homepage: 'https://github.com/petershaw/NodeJS-Apache-Like-AccessLog',
-74 silly publish   repository:
-74 silly publish    { type: 'git',
-74 silly publish      url: 'https://github.com/petershaw/NodeJS-Apache-Like-AccessLog.git' },
-74 silly publish   author:
-74 silly publish    { name: 'Peter Shaw',
-74 silly publish      email: 'unthoughted@gmail.com',
-74 silly publish      url: 'https://github.com/petershaw/' },
-74 silly publish   main: 'index.js',
-74 silly publish   keywords: [ 'log', 'access', 'apache', 'NCSA Common Log Format', 'CLF' ],
-74 silly publish   dependencies:
-74 silly publish    { microtime: '~0.4.0',
-74 silly publish      sprintf: '~0.1.1',
-74 silly publish      'date-format-lite': '0.1.1' },
-74 silly publish   readme: 'apache-like-accesslog\n==========\n---\n\n A simple apache-like access log middleware for nodejs.\n\nDescription\n----------\nAccesslog will generate a apache like access.log file that can produce the two main formats: CLF and EXTENDED\n\nUsage\n---------\n\n```javascript\nvar accesslog = require(\'accesslog\');\n[…express...]\napp.use(accesslog.logger);\n```\n\nConfiguration\n---------\nAccesslog will produce a log file called "access.log" inside the ./logs directory of your application root. \nYou can overwrite this defaults by passing a configuration object into the accesslog.configure function.\n```javascript\naccesslog.configure({\n\tformat: \'CLF\',\n\tdirectory: \'logs\',\n\tfilename: \'access.log\'});\n```\n\u001e\u001f\u001f\u001f\b ',
-74 silly publish   readmeFilename: 'README.md',
-74 silly publish   bugs: { url: 'https://github.com/petershaw/NodeJS-Apache-Like-AccessLog/issues' },
-74 silly publish   _id: 'apache-like-accesslog@0.0.2',
-74 silly publish   dist: { shasum: 'b9c31780a3eb7940d0fee582bf1497b927cf9d64' },
-74 silly publish   _from: '.' }
-75 verbose url raw apache-like-accesslog
-76 verbose url resolving [ 'https://registry.npmjs.org/', './apache-like-accesslog' ]
-77 verbose url resolved https://registry.npmjs.org/apache-like-accesslog
-78 info trying registry request attempt 1 at 02:44:47
-79 http PUT https://registry.npmjs.org/apache-like-accesslog
-80 http 409 https://registry.npmjs.org/apache-like-accesslog
-81 verbose url raw apache-like-accesslog
-82 verbose url resolving [ 'https://registry.npmjs.org/', './apache-like-accesslog' ]
-83 verbose url resolved https://registry.npmjs.org/apache-like-accesslog
-84 info trying registry request attempt 1 at 02:44:48
-85 http GET https://registry.npmjs.org/apache-like-accesslog
-86 http 200 https://registry.npmjs.org/apache-like-accesslog
-87 error publish fail Cannot publish over existing version.
-87 error publish fail Update the 'version' field in package.json and try again.
-87 error publish fail
-87 error publish fail If the previous version was published in error, see:
-87 error publish fail     npm help unpublish
-87 error publish fail
-87 error publish fail To automatically increment version numbers, see:
-87 error publish fail     npm help version
-88 error System Darwin 12.4.0
-89 error command "/usr/local/Cellar/node/0.10.7/bin/node" "/usr/local/bin/npm" "publish"
-90 error cwd /Users/pshaw/Projects/NodeJS-Apache-Like-AccessLog
-91 error node -v v0.10.7
-92 error npm -v 1.2.21
-93 error code EPUBLISHCONFLICT
-94 verbose exit [ 1, true ]
+10 verbose lock . /Users/kris/.npm/3a52ce78-.lock
+11 verbose tar pack [ '/Users/kris/.npm/apache-like-accesslog/0.0.4/package.tgz',
+11 verbose tar pack   '.' ]
+12 verbose tarball /Users/kris/.npm/apache-like-accesslog/0.0.4/package.tgz
+13 verbose folder .
+14 info prepublish apache-like-accesslog@0.0.4
+15 silly lockFile 1f1177db-tar tar://.
+16 verbose lock tar://. /Users/kris/.npm/1f1177db-tar.lock
+17 silly lockFile 1b2daaeb-like-accesslog-0-0-4-package-tgz tar:///Users/kris/.npm/apache-like-accesslog/0.0.4/package.tgz
+18 verbose lock tar:///Users/kris/.npm/apache-like-accesslog/0.0.4/package.tgz /Users/kris/.npm/1b2daaeb-like-accesslog-0-0-4-package-tgz.lock
+19 silly lockFile 1f1177db-tar tar://.
+20 silly lockFile 1f1177db-tar tar://.
+21 silly lockFile 1b2daaeb-like-accesslog-0-0-4-package-tgz tar:///Users/kris/.npm/apache-like-accesslog/0.0.4/package.tgz
+22 silly lockFile 1b2daaeb-like-accesslog-0-0-4-package-tgz tar:///Users/kris/.npm/apache-like-accesslog/0.0.4/package.tgz
+23 silly lockFile 04cab65e-che-like-accesslog-0-0-4-package /Users/kris/.npm/apache-like-accesslog/0.0.4/package
+24 verbose lock /Users/kris/.npm/apache-like-accesslog/0.0.4/package /Users/kris/.npm/04cab65e-che-like-accesslog-0-0-4-package.lock
+25 silly lockFile 04cab65e-che-like-accesslog-0-0-4-package /Users/kris/.npm/apache-like-accesslog/0.0.4/package
+26 silly lockFile 04cab65e-che-like-accesslog-0-0-4-package /Users/kris/.npm/apache-like-accesslog/0.0.4/package
+27 silly lockFile 3a52ce78- .
+28 silly lockFile 3a52ce78- .
+29 silly publish { name: 'apache-like-accesslog',
+29 silly publish   description: 'A apache-like access log as middleware for nodejs.',
+29 silly publish   version: '0.0.4',
+29 silly publish   private: false,
+29 silly publish   homepage: 'https://github.com/petershaw/NodeJS-Apache-Like-AccessLog',
+29 silly publish   repository:
+29 silly publish    { type: 'git',
+29 silly publish      url: 'https://github.com/petershaw/NodeJS-Apache-Like-AccessLog.git' },
+29 silly publish   author:
+29 silly publish    { name: 'Peter Shaw',
+29 silly publish      email: 'unthoughted@gmail.com',
+29 silly publish      url: 'https://github.com/petershaw/' },
+29 silly publish   main: 'index.js',
+29 silly publish   keywords: [ 'log', 'access', 'apache', 'NCSA Common Log Format', 'CLF' ],
+29 silly publish   dependencies:
+29 silly publish    { microtime: '~0.4.0',
+29 silly publish      sprintf: '~0.1.1',
+29 silly publish      'date-format-lite': '0.1.1' },
+29 silly publish   readme: 'apache-like-accesslog\n==========\n---\n\n A simple apache-like access log middleware for nodejs.\n\nDescription\n----------\nAccesslog will generate a apache like access.log file that can produce the two main formats: CLF and EXTENDED\n\nUsage\n---------\n\n```javascript\nvar accesslog = require(\'accesslog\');\n[…express...]\napp.use(accesslog.logger);\n```\n\nConfiguration\n---------\nAccesslog will produce a log file called "access.log" inside the ./logs directory of your application root. \nYou can overwrite this defaults by passing a configuration object into the accesslog.configure function.\n```javascript\naccesslog.configure({\n\tformat: \'CLF\',\n\tdirectory: \'logs\',\n\tfilename: \'access.log\'});\n```\n\u001e\u001f\u001f\u001f\b ',
+29 silly publish   readmeFilename: 'README.md',
+29 silly publish   gitHead: '4e3d8e3d3608a36f22285ce235285865514de5f4',
+29 silly publish   bugs: { url: 'https://github.com/petershaw/NodeJS-Apache-Like-AccessLog/issues' },
+29 silly publish   _id: 'apache-like-accesslog@0.0.4',
+29 silly publish   scripts: {},
+29 silly publish   _shasum: '4aeaf5edecfa559767fe5c219c751b3ee9ef5942',
+29 silly publish   _from: '.' }
+30 verbose mapToRegistry name apache-like-accesslog
+31 verbose mapToRegistry uri https://registry.npmjs.org/apache-like-accesslog
+32 verbose publish registryBase https://registry.npmjs.org/
+33 verbose request where is /apache-like-accesslog
+34 verbose request registry https://registry.npmjs.org/
+35 verbose request id ab1f5175f384e50f
+36 verbose request url raw /apache-like-accesslog
+37 verbose request url resolving [ 'https://registry.npmjs.org/', './apache-like-accesslog' ]
+38 verbose request url resolved https://registry.npmjs.org/apache-like-accesslog
+39 verbose request where is https://registry.npmjs.org/apache-like-accesslog
+40 verbose request setting basic auth
+41 info trying registry request attempt 1 at 11:04:42
+42 http PUT https://registry.npmjs.org/apache-like-accesslog
+43 http 401 https://registry.npmjs.org/apache-like-accesslog
+44 verbose headers { date: 'Tue, 26 Aug 2014 09:04:00 GMT',
+44 verbose headers   server: 'CouchDB/1.5.0 (Erlang OTP/R14B04)',
+44 verbose headers   'content-type': 'application/json',
+44 verbose headers   'cache-control': 'max-age=60',
+44 verbose headers   'content-length': '67',
+44 verbose headers   'accept-ranges': 'bytes',
+44 verbose headers   via: '1.1 varnish',
+44 verbose headers   'x-served-by': 'cache-sjc3132-SJC',
+44 verbose headers   'x-cache': 'MISS',
+44 verbose headers   'x-cache-hits': '0',
+44 verbose headers   'x-timer': 'S1409043840.234512,VS0,VE112',
+44 verbose headers   'keep-alive': 'timeout=10, max=50',
+44 verbose headers   connection: 'Keep-Alive' }
+45 error publish Failed PUT 401
+46 error Error: unauthorized Name or password is incorrect.: apache-like-accesslog
+46 error     at RegClient.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:313:14)
+46 error     at Request._callback (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:251:65)
+46 error     at Request.self.callback (/usr/local/lib/node_modules/npm/node_modules/request/request.js:123:22)
+46 error     at Request.emit (events.js:98:17)
+46 error     at Request.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/request.js:893:14)
+46 error     at Request.emit (events.js:117:20)
+46 error     at IncomingMessage.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/request.js:844:12)
+46 error     at IncomingMessage.emit (events.js:117:20)
+46 error     at _stream_readable.js:938:16
+46 error     at process._tickCallback (node.js:419:13)
+47 error If you need help, you may report this *entire* log,
+47 error including the npm and node versions, at:
+47 error     <http://github.com/npm/npm/issues>
+48 error System Darwin 13.3.0
+49 error command "node" "/usr/local/bin/npm" "publish"
+50 error cwd /Users/kris/Projects/NodeJS-Apache-Like-AccessLog
+51 error node -v v0.10.30
+52 error npm -v 2.0.0-alpha-5
+53 verbose exit [ 1, true ]
