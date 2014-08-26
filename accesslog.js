@@ -15,17 +15,17 @@ var conf = {
 	filename: 'access.log'
 };
 
-accesslog.version = '0.0.3';
+accesslog.version = '0.0.4';
 
 /**
  * Configuration object
  */
 accesslog.configure = function accesslogConfigure(opt) {
   // writes logs into this directory
-  directory = (typeof opt.directory === 'string') ? opt.directory : __dirname + pathsep + 'logs';
+  conf.directory = (typeof opt.directory === 'string') ? opt.directory : __dirname + pathsep + 'logs';
 
   // write log to file with name
-  filename = (typeof opt.directory === 'string') ? opt.filename : 'access.log';
+  conf.filename = (typeof opt.directory === 'string') ? opt.filename : 'access.log';
   
   // log format
 	/**
@@ -89,7 +89,7 @@ accesslog.logger = function log(request, response, next) {
   		now.format("ss"),
   		(rendertime /60/60)
   	);
-  	
+  	request.protocol = request.protocol || 'unknown';
   	var p1 =	sprintf('"%s %s %s/%s"', 
   		request.method,
   		request.url,
@@ -97,9 +97,14 @@ accesslog.logger = function log(request, response, next) {
   		request.httpVersion
   	)
   	
+  	var head = response._headers || response.headers;
+  	var bytesRead = 0;
+  	if(response.req && response.req.client && response.req.client.bytesRead){
+  		bytesRead = response.req.client.bytesRead;
+  	}
   	var p2 =	sprintf("%d %s", 
   	  	200,
-  		response._headers['content-length']
+  		head['content-length'] || bytesRead
   	);
   	var p3 = '';
   	if(conf.format.match('\\+')){
