@@ -103,7 +103,7 @@ accesslog.logger = function log(request, response, next) {
   		bytesRead = response.req.client.bytesRead;
   	}
   	var p2 =	sprintf("%d %s", 
-  	  	200,
+  	  	response.statusCode,
   		head['content-length'] || bytesRead
   	);
   	var p3 = '';
