@@ -78,7 +78,7 @@ accesslog.logger = function log(request, response, next) {
   var rendertime = endtime - starttime;
 
   var now = new Date();
-  var p0 =	sprintf("%s - %s [%s/%s/%s:%s:%s] %s", 
+  var p0 =	sprintf("%s - %s [%s/%s/%s:%s:%s:%s] %s",
   		clientAddr, 
   		username,
   		now.format("DD"),
@@ -87,7 +87,7 @@ accesslog.logger = function log(request, response, next) {
   		now.format("hh"),
   		now.format("mm"),
   		now.format("ss"),
-  		(rendertime /60/60)
+  		rendertime
   	);
   	request.protocol = request.protocol || 'unknown';
   	var p1 =	sprintf('"%s %s %s/%s"', 
