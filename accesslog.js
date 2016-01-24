@@ -87,7 +87,7 @@ accesslog.logger = function log(request, response, next) {
   		now.format("hh"),
   		now.format("mm"),
   		now.format("ss"),
-  		rendertime)
+  		rendertime
   	);
   	request.protocol = request.protocol || 'unknown';
   	var p1 =	sprintf('"%s %s %s/%s"', 
