@@ -6,7 +6,7 @@
 		"sprintf": "~0.1.1"
 	},
 	"private": false,
-	"version": "0.0.5",
+	"version": "0.1.0",
 	"name": "apache-like-accesslog",
 	"homepage": "https://github.com/petershaw/NodeJS-Apache-Like-AccessLog",
 	"description": "A apache-like access log as middleware for express and restify.",
