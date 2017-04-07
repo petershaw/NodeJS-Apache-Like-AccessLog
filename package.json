@@ -1,27 +1,27 @@
 {
-  "name": "apache-like-accesslog",
-  "description": "A apache-like access log as middleware for express and restify.",
-  "version": "0.0.5",
-  "private": false,
-  "homepage": "https://github.com/petershaw/NodeJS-Apache-Like-AccessLog",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/petershaw/NodeJS-Apache-Like-AccessLog.git"
-  },
-  "author": "Peter Shaw <unthoughted@gmail.com> (https://github.com/petershaw/)",
-  "main": "index.js",
-  "keywords": [
-    "log",
-    "access",
-    "apache",
-    "NCSA Common Log Format",
-    "CLF",
-    "express",
-    "restify"
-  ],
-  "dependencies": {
-    "date-format-lite": "0.1.1",
-    "microtime": "^1.2.0",
-    "sprintf": "~0.1.1"
-  }
+	"author": "Peter Shaw <unthoughted@gmail.com> (https://github.com/petershaw/)",
+	"dependencies": {
+		"date-format-lite": "^0.9.2",
+		"microtime": "^2.1.2",
+		"sprintf": "~0.1.1"
+	},
+	"private": false,
+	"version": "0.0.5",
+	"name": "apache-like-accesslog",
+	"homepage": "https://github.com/petershaw/NodeJS-Apache-Like-AccessLog",
+	"description": "A apache-like access log as middleware for express and restify.",
+	"keywords": [
+		"log",
+		"access",
+		"apache",
+		"NCSA Common Log Format",
+		"CLF",
+		"express",
+		"restify"
+	],
+	"main": "index.js",
+	"repository": {
+		"url": "https://github.com/petershaw/NodeJS-Apache-Like-AccessLog.git",
+		"type": "git"
+	}
 }
