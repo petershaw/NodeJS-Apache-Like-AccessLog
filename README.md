@@ -12,7 +12,7 @@ Usage
 ---------
 
 ```javascript
-var accesslog = require('accesslog');
+var accesslog = require('apache-like-accesslog');
 […express...]
 app.use(accesslog.logger);
 ```
