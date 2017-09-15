@@ -1,14 +1,14 @@
 {
 	"author": "Peter Shaw <unthoughted@gmail.com> (https://github.com/petershaw/)",
-	"name": "apache-like-accesslog",
 	"dependencies": {
 		"date-format-lite": "^0.9.2",
 		"microtime": "^2.1.2",
 		"sprintf": "~0.1.1"
 	},
-	"version": "1.0.1",
-	"private": false,
+	"name": "apache-like-accesslog",
 	"homepage": "https://github.com/petershaw/NodeJS-Apache-Like-AccessLog",
+	"version": "1.0.2",
+	"private": false,
 	"description": "A apache-like access log as middleware for express and restify.",
 	"main": "index.js",
 	"repository": {
