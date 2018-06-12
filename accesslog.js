@@ -131,5 +131,7 @@ writeToLog = function( str ){
 	if(fd == undefined){
 		fd = fs.openSync(path.join(conf.directory, conf.filename), 'a');
 	}
-	fs.write( fd, str+"\n" );
+	fs.write( fd, str+"\n", function(err){
+		if(err){ console.log(err, str); }
+	});
 }
