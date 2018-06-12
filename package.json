@@ -7,7 +7,7 @@
 	},
 	"name": "apache-like-accesslog",
 	"homepage": "https://github.com/petershaw/NodeJS-Apache-Like-AccessLog",
-	"version": "1.0.2",
+	"version": "1.0.3",
 	"private": false,
 	"description": "A apache-like access log as middleware for express and restify.",
 	"main": "index.js",

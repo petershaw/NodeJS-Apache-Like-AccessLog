@@ -15,7 +15,7 @@ var conf = {
 	filename: 'access.log'
 };
 
-accesslog.version = require('package').version;
+accesslog.version = require('./package').version;
 
 /**
  * Configuration object
